@@ -13,7 +13,9 @@ public class Greeter {
 
   public String sayHello() {
     ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", locale);
-    return messages.getString("greeting") + ", " + name.toUpperCase();
+    //merged the two features here so it is upper case AND markdown highlighted
+    return messages.getString("greeting") + ", " + "_" + name.toUpperCase() + "_";
+
   }
 
   public static void main(String[] args) {
